@@ -1,0 +1,17 @@
+include ../logo/_logo.pug
+mixin nav
+    nav.nav
+        +logo.nav__logo
+        ul.nav__list
+            li.nav__item.nav__item--active
+                a(href="javascript:void(0)").nav__link HOME
+            li.nav__item
+                a(href="javascript:void(0)").nav__link ABOUT
+            li.nav__item
+                a(href="javascript:void(0)").nav__link SERVICE
+            li.nav__item
+                a(href="javascript:void(0)").nav__link GALLERY
+            li.nav__item
+                a(href="javascript:void(0)").nav__link BLOG
+            li.nav__item
+                a(href="javascript:void(0)").nav__link CONTACT

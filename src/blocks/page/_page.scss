@@ -1,0 +1,80 @@
+.page {
+    text-align: center;
+    color: white;
+
+    &--main {
+        background-image: url(../images/main-bg.png);
+        background-repeat: no-repeat;
+        background-position: center;
+        min-height: 100vh;
+        color: black;
+        padding-bottom: 70px;
+
+        &:after {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            bottom: -100%;
+            right: 0;
+            z-index: -1;
+            background-image: linear-gradient(to right, #F9F8FB 0%, #F9F8FB 100%);
+            pointer-events: none;
+        }
+    }
+
+    &--about {
+        background-color: #00b8b8;
+        padding-bottom: 20px;
+    }
+
+    &--about-img {
+        margin-top: 35px;
+        margin-left: -13px;
+    }
+
+    &--services {
+        background-color: #70bfff;
+        padding-top: 100px;
+    }
+
+    &--gallery {
+        background-color: #ffe92f;
+        padding-top: 90px;
+    }
+
+    &--subscribe {
+        color: black;
+        position: relative;
+        padding-top: 140px;
+    }
+
+    &--subscribe-img {
+        position: absolute;
+        bottom: 0;
+        right: 0;
+        height: 100%;
+        z-index: -1;
+    }
+
+    &--blog {
+        background-color: #b07cf7;
+        padding-top: 102px;
+    }
+
+    &--contact {
+        background-image: url(../images/form-bg.png);
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+        color: black;
+    }
+
+    &--footer {
+        height: 100px;
+        background-color: #262626;
+        color: #b9b9b9;
+        display: flex;
+        align-items: center;
+    }
+}

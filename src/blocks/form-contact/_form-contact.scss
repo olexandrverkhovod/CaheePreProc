@@ -1,0 +1,40 @@
+.form-contact {
+    padding-top: 13px;
+
+    &__wrapper {
+        padding-bottom: 15px;
+        padding-left: 38px;
+    }
+
+    &__input {
+        color: white;
+        width: 100%;
+        border: 0;
+        height: 50px;
+        opacity: 0.5;
+        background-color: #00c4c4;
+        padding: 0 20px;
+        transition: 0ms;
+
+        &:focus {
+            color: white;
+            border-left: 5px solid #355b82;
+            padding-left: 15px;
+            opacity: 1;
+        }
+
+        &::placeholder {
+            color: white;
+            font-family: 'Raleway', sans-serif;
+            font-size: 15px;
+            font-weight: 300;
+        }
+
+        &--textarea {
+            height: 250px;
+            resize: none;
+            padding-top: 16px;
+        }
+    }
+
+}

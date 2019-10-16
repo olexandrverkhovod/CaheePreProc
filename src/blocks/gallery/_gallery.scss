@@ -1,0 +1,20 @@
+.gallery {
+    &__list {
+        &--firstline {
+            margin-bottom: 30px;
+        }
+
+        &--secondline {
+            margin-bottom: 50px;
+        }
+    }
+
+    &__img {
+        max-width: 100%;
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.5);
+
+        &:hover {
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+        }
+    }
+}

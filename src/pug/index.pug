@@ -1,0 +1,90 @@
+include ../blocks/nav/_nav.pug
+include ../blocks/headline/_headline.pug
+include ../blocks/button-area/_button-area.pug
+include ../blocks/scroll/_scroll.pug
+include ../blocks/buttons-group/_buttons-group.pug
+include ../blocks/gallery/_gallery.pug
+include ../blocks/form-subscribe/_form-subscribe.pug
+include ../blocks/blog/_blog.pug
+include ../blocks/form-contact/_form-contact.pug
+include ../blocks/desc-contact/_desc-contact.pug
+include ../blocks/footer/_footer.pug
+
+<!DOCTYPE html>
+html(lang="en")
+    head
+        meta(charset="UTF-8")
+        meta(name="viewport", content="width=device-width, initial-scale=1.0")
+        meta(http-equiv="X-UA-Compatible", content="ie=edge")
+        title Cahee
+        link(rel="stylesheet", href="css/style.css")
+    body
+        .page.page--main
+            .container.container--lg
+                .row
+                    .col-12
+                        +nav
+                .row
+                    .col-5
+                        +headline("Fresh Life", "Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco").headline--main
+                        +button-area("get free now").button-area--main
+                    .col-7
+                .row
+                    .col-12
+                        +scroll
+        .page.page--about
+            .container.container--lg
+                .row
+                    .col-6
+                        img(src="images/about-img.png" alt="cup with raspberries").page--about-img
+                    .col-6
+                        +headline("About Us", "Abore Cahee magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum. Nim id est laborum. Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore.").headline--about
+        .page.page--services
+            .container.container--lg
+                .row
+                    .col-4.offset-1
+                        +buttons-group
+                    .col-6.offset-1
+                        +headline("Our Services", "").headline--services
+                        img(src="images/tomato.png" alt="tomato").page--services-img
+        .page.page--gallery
+            .container.container--lg
+                .row
+                    .col-12
+                        +headline("Gallery","Consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.").headline--gallery
+                +gallery
+                +button-area("view more").button-area--gallery
+        .page.page--subscribe
+            .container.container--lg
+                .row
+                    .col-6
+                        +headline("Subscribe To Us","Dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.").headline--subscribe
+                .row
+                    .col-8
+                        +form-subscribe
+            img(src="images/subscribe-img.png" alt="").page--subscribe-img
+        .page.page--blog
+            .container.container--lg
+                .row
+                    .col-12
+                        +headline("Blog","Dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit.").headline--blog
+                +blog
+                .row
+                    .col-12
+                        +button-area("view more").button-area--blog
+        .page.page--contact
+            .container.container--lg
+                .row
+                    .col-12
+                        +headline("Contact","For new projects, ideas, business or anything you'd like to discuss, contact with me!").headline--contact
+                .row
+                    .col-5
+                        +form-contact
+                    .col-5.offset-2
+                        +desc-contact
+        .page.page--footer 
+            .container.container--lg
+                .row
+                    .col-12
+                        +footer
+

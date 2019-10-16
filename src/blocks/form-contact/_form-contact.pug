@@ -1,0 +1,14 @@
+include ../button-area/_button-area.pug
+
+mixin form-contact
+    .form-contact
+        form(action="" method="get")
+            .form-contact__wrapper
+                input(type="text" name="user_name" placeholder="Your Name" required).form-contact__input
+            .form-contact__wrapper
+                input(type="text" name="user_email" placeholder="Your email" required).form-contact__input
+            .form-contact__wrapper
+                input(type="text" name="user_phone" placeholder="Your phone number" required data-mask="+3(000)000-00-00").form-contact__input
+            .form-contact__wrapper
+                textarea(rows="10" cols="45" name="text" placeholder="Your message" required).form-contact__input.form-contact__input--textarea
+            +button-area("submit").button-area--contact

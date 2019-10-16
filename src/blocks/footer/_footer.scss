@@ -1,0 +1,26 @@
+.footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    &__copyright {
+        font-weight: 300;
+    }
+
+    &__logo {
+        display: block;
+        width: 64px;
+        height: 27px;
+        // margin-left: 40px;
+    }
+
+    &__author {
+        font-size: 15px;
+        font-weight: 300;
+    }
+
+    &__author-link {
+        color: #ff2b58;
+        font-weight: 700;
+    }
+}

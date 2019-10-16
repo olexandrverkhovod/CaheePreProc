@@ -1,0 +1,39 @@
+.form-suscribe {
+    margin-bottom: 164px;
+
+    &__wrapper {
+        display: flex;
+    }
+
+    &__input {
+        border: 1px solid black;
+        flex-grow: 1;
+        margin-right: 30px;
+        padding: 0 15px;
+        line-height: 50px;
+        font-family: 'Raleway', sans-serif;
+
+        &::placeholder {
+            font-family: 'Raleway', sans-serif;
+            color: #a7a7a7;
+            font-size: 15px;
+            font-weight: 300;
+        }
+    }
+
+    &__btn {
+        border: none;
+        font-size: 20px;
+        font-weight: 300;
+        color: white;
+        font-family: 'Raleway', sans-serif;
+        text-transform: uppercase;
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.5);
+        padding: 16px 42px 14px 42px;
+        background-color: #96b92c;
+
+        &:hover {
+            background-color: #b2db35;
+        }
+    }
+}

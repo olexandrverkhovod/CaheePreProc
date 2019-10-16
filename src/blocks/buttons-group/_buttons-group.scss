@@ -1,0 +1,84 @@
+.buttons-group {
+    margin-top: 78px;
+    margin-bottom: 130px;
+    display: flex;
+    flex-basis: 25%;
+    flex-direction: column;
+    padding-top: 2px;
+
+    &__btn {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-bottom: 20px;
+        background-color: white;
+        border: none;
+        font-size: 20px;
+        font-weight: 300;
+        color: white;
+        text-transform: uppercase;
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.5);
+
+        &:hover {
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+        }
+    }
+
+    &__text {
+        font-family: 'Raleway', sans-serif;
+        display: flex;
+        flex-grow: 3;
+        justify-content: center;
+        color: #262626;
+        font-size: 20px;
+        font-weight: 700;
+        text-transform: none;
+        padding: 36px 0;
+        border-right: 1px solid grey;
+
+        &--shopping {
+            padding-bottom: 38px;
+            padding-right: 6px;
+        }
+
+        &--products {
+            padding-bottom: 38px;
+            padding-right: 7px;
+        }
+
+        &--delivery {
+            padding-top: 19px;
+            padding-bottom: 23px;
+            line-height: 28px;
+            padding-right: 7px;
+        }
+
+        &--organized {
+            padding-top: 36px;
+            padding-bottom: 38px;
+            padding-left: 1px;
+        }
+    }
+
+    &__img {
+        &--shopping {
+            padding-right: 20px;
+            padding-left: 26px;
+        }
+
+        &--products {
+            padding-right: 16px;
+            padding-left: 22px;
+        }
+
+        &--delivery {
+            padding-right: 17px;
+            padding-left: 22px;
+        }
+
+        &--organized {
+            padding-right: 17px;
+            padding-left: 21px;
+        }
+    }
+}

@@ -1,0 +1,77 @@
+.button-area {
+    &--main {
+        text-align: left;
+        margin-left: 3px;
+
+        & button {
+            padding: 15px 25px 14px 25px;
+            background-color: #ff6033;
+            margin-bottom: 296px;
+            margin-left: 35px;
+
+            &:hover {
+                padding: 15px 25px 14px 25px;
+                background-color: #ff400b;
+            }
+        }
+    }
+
+    &--gallery {
+        & button {
+            padding: 16px 42px 14px 42px;
+            background-color: #5585a2;
+            margin-bottom: 120px;
+
+            &:hover {
+                background-color: #6aa5ca;
+            }
+        }
+    }
+
+    &--subscribe {
+        & button {
+            padding: 16px 42px 14px 42px;
+            background-color: #96b92c;
+
+            &:hover {
+                background-color: #b2db35;
+            }
+        }
+    }
+
+    &--blog {
+        & button {
+            padding: 16px 42px 14px 42px;
+            background-color: #f72b3b;
+            margin-bottom: 120px;
+
+            &:hover {
+                background-color: #fd3e4e;
+            }
+        }
+    }
+
+    &--contact {
+        & button {
+            padding: 15px 180px;
+            margin-left: 37px;
+            background-color: #f72b3b;
+            opacity: 0.7;
+            margin-bottom: 52px;
+
+            &:hover {
+                opacity: 1;
+            }
+        }
+    }
+
+    &__btn {
+        border: none;
+        font-size: 20px;
+        font-weight: 300;
+        color: white;
+        font-family: 'Raleway', sans-serif;
+        text-transform: uppercase;
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.5);
+    }
+}

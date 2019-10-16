@@ -1,0 +1,119 @@
+.headline {
+
+    &--main {
+        text-align: left;
+        padding-left: 35px;
+        padding-right: 35px;
+    }
+
+    &--about {
+        padding-top: 168px;
+        margin-left: 110px;
+        padding-right: 20px;
+
+        & h1 {
+            font-size: 90px;
+            font-weight: 700;
+            margin-bottom: 16px;
+            text-align: left;
+        }
+
+        & p {
+            line-height: 28px;
+            margin-bottom: 30px;
+            text-align: left;
+        }
+    }
+
+    &--services {
+        position: relative;
+        padding-left: 105px;
+
+        & h1 {
+            white-space: nowrap;
+            position: absolute;
+            top: 220px;
+            left: 0px;
+            color: white;
+            font-size: 90px;
+            font-weight: 700;
+        }
+    }
+
+    &--gallery {
+        & h1 {
+            color: black;
+            font-size: 90px;
+            font-weight: 700;
+            margin-bottom: 30px;
+        }
+
+        & p {
+            color: black;
+            padding: 0 290px;
+            margin-bottom: 41px;
+            line-height: 27px;
+        }
+    }
+
+    &--subscribe {
+        & h1 {
+            color: black;
+            font-size: 40px;
+            font-weight: 700;
+            margin-bottom: 21px;
+            text-align: left;
+        }
+
+        & p {
+            color: black;
+            margin-bottom: 27px;
+            line-height: 27px;
+            text-align: left;
+        }
+    }
+
+    &--blog {
+        & h1 {
+            font-size: 90px;
+            font-weight: 700;
+            margin-bottom: 31px;
+        }
+
+        & p {
+            padding: 0 300px;
+            margin-bottom: 44px;
+            line-height: 25px;
+        }
+    }
+
+    &--contact {
+        padding-top: 88px;
+
+        & h1 {
+            font-size: 90px;
+            font-weight: 700;
+            margin-bottom: 30px;
+        }
+
+        & p {
+            line-height: 25px;
+            margin-bottom: 30px;
+            padding: 0 360px;
+        }
+    }
+
+    &__title {
+        font-size: 60px;
+        font-weight: 900;
+        margin-bottom: 20px;
+    }
+
+    &__subtitle {
+        font-size: 17px;
+        font-weight: 300;
+        padding-left: 3px;
+        line-height: 26px;
+        margin-bottom: 30px;
+    }
+}

@@ -1,0 +1,23 @@
+.desc-contact {
+    text-align: left;
+    padding-left: 8px;
+    padding-top: 11px;
+
+    & a {
+        text-decoration: none;
+        color: black;
+    }
+
+    &__title {
+        font-size: 17px;
+        font-weight: 700;
+        text-transform: uppercase;
+        margin-bottom: 5px;
+    }
+
+    &__info {
+        font-size: 20px;
+        font-weight: 300;
+        margin-bottom: 18px;
+    }
+}
