@@ -1,0 +1,47 @@
+.form-suscribe {
+  margin-bottom: 164px; }
+  .form-suscribe__wrapper {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex; }
+  .form-suscribe__input {
+    border: 1px solid black;
+    -webkit-box-flex: 1;
+    -ms-flex-positive: 1;
+    flex-grow: 1;
+    margin-right: 30px;
+    padding: 0 15px;
+    line-height: 50px; }
+    .form-suscribe__input::-webkit-input-placeholder {
+      font-family: 'Raleway', sans-serif;
+      color: #a7a7a7;
+      font-size: 15px;
+      font-weight: 300; }
+    .form-suscribe__input:-ms-input-placeholder {
+      font-family: 'Raleway', sans-serif;
+      color: #a7a7a7;
+      font-size: 15px;
+      font-weight: 300; }
+    .form-suscribe__input::-ms-input-placeholder {
+      font-family: 'Raleway', sans-serif;
+      color: #a7a7a7;
+      font-size: 15px;
+      font-weight: 300; }
+    .form-suscribe__input::placeholder {
+      font-family: 'Raleway', sans-serif;
+      color: #a7a7a7;
+      font-size: 15px;
+      font-weight: 300; }
+  .form-suscribe__btn {
+    border: none;
+    font-size: 20px;
+    font-weight: 300;
+    color: white;
+    font-family: 'Raleway', sans-serif;
+    text-transform: uppercase;
+    -webkit-box-shadow: 0 2px 5px rgba(0, 0, 0, 0.5);
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.5);
+    padding: 16px 42px 14px 42px;
+    background-color: #96b92c; }
+    .form-suscribe__btn:hover {
+      background-color: #b2db35; }

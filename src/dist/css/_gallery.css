@@ -1,0 +1,12 @@
+.gallery__list--firstline {
+  margin-bottom: 30px; }
+
+.gallery__list--secondline {
+  margin-bottom: 50px; }
+
+.gallery__img {
+  -webkit-box-shadow: 0 2px 5px rgba(0, 0, 0, 0.5);
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.5); }
+  .gallery__img:hover {
+    -webkit-box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5); }

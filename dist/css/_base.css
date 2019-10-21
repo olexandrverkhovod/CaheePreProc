@@ -1,0 +1,24 @@
+* {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  -webkit-transition: all .1s;
+  -o-transition: all .1s;
+  transition: all .1s; }
+
+html {
+  margin: 0;
+  padding: 0;
+  font-family: 'Raleway', sans-serif; }
+
+body {
+  font-family: inherit;
+  top: 0; }
+
+a {
+  text-decoration: none;
+  outline: 0; }
+  a:hover, a:active, a:focus {
+    outline: 0; }
+
+.container--lg {
+  max-width: 1200px; }

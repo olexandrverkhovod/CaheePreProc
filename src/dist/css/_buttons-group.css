@@ -1,0 +1,78 @@
+.buttons-group {
+  margin-top: 78px;
+  margin-bottom: 130px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-preferred-size: 25%;
+  flex-basis: 25%;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  padding-top: 2px; }
+  .buttons-group__btn {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    margin-bottom: 20px;
+    background-color: white;
+    border: none;
+    font-size: 20px;
+    font-weight: 300;
+    color: white;
+    text-transform: uppercase;
+    -webkit-box-shadow: 0 2px 5px rgba(0, 0, 0, 0.5);
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.5); }
+    .buttons-group__btn:hover {
+      -webkit-box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5); }
+  .buttons-group__text {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-flex: 3;
+    -ms-flex-positive: 3;
+    flex-grow: 3;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    color: #262626;
+    font-size: 20px;
+    font-weight: 700;
+    text-transform: none;
+    padding: 36px 0;
+    border-right: 1px solid grey; }
+    .buttons-group__text--shopping {
+      padding-bottom: 38px;
+      padding-right: 6px; }
+    .buttons-group__text--products {
+      padding-bottom: 38px;
+      padding-right: 7px; }
+    .buttons-group__text--delivery {
+      padding-top: 19px;
+      padding-bottom: 23px;
+      line-height: 28px;
+      padding-right: 7px; }
+    .buttons-group__text--organized {
+      padding-top: 36px;
+      padding-bottom: 38px;
+      padding-left: 1px; }
+  .buttons-group__img--shopping {
+    padding-right: 20px;
+    padding-left: 26px; }
+  .buttons-group__img--products {
+    padding-right: 16px;
+    padding-left: 22px; }
+  .buttons-group__img--delivery {
+    padding-right: 17px;
+    padding-left: 22px; }
+  .buttons-group__img--organized {
+    padding-right: 17px;
+    padding-left: 21px; }
