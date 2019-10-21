@@ -5,6 +5,48 @@
     margin-top: 51px;
     margin-bottom: 252px;
 
+    &__link {
+        line-height: 42px;
+        text-align: center;
+        background-color: #5585a2;
+        color: white;
+        display: block;
+        width: 100%;
+
+        &:after {
+            display: none !important;
+        }
+
+        &:before {
+            display: none !important;
+        }
+    }
+
+    &__checkbox {
+        display: none;
+    }
+
+    &__burger {
+        width: 42px;
+        height: 42px;
+        display: block;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        position: relative;
+        z-index: 2;
+        font-size: 42px;
+
+        &>.fa-times {
+            display: none;
+        }
+
+        @media screen and (min-width: 768px) {
+            display: none;
+        }
+
+    }
+
     &__logo {
         margin-left: 38px;
     }
@@ -18,6 +60,33 @@
             text-decoration: none;
             color: black;
         }
+
+        @media screen and (max-width: 767px) {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            background-color: #5585a2;
+            max-height: 0;
+            overflow: hidden;
+            transition: ease .3s;
+        }
+
+        @media screen and (max-width: 767px) {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            background-color: #5585a2;
+            max-height: 0;
+            overflow: hidden;
+            transition: ease .3s;
+        }
+
     }
 
     &__item {
@@ -54,4 +123,47 @@
         }
     }
 
+    &__checkbox:checked+&__burger+&__list {
+        max-height: 440px;
+        padding-top: 160px;
+    }
+
+
+    &__checkbox:checked+&__burger>.fa-times {
+        display: block;
+    }
+
+    &__checkbox:checked+&__burger>.fa-hamburger {
+        display: none;
+    }
+
+
+
+
+
+
+
+
+    // .nav {
+    //     &__checkbox:checked+&__burger+&__list {
+    //         max-height: 440px;
+    //         padding-top: 160px;
+    //     }
+
+
+
+
+
+
+    //     .nav__item {
+    //         padding: 0;
+    //         margin: 0;
+    //         width: 100%;
+    //         border-top: 1px solid white;
+    //     }
+
+
+
+    // .nav__link:before,
+    // .nav__link:after {}
 }
