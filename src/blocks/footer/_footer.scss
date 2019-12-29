@@ -5,22 +5,26 @@
 
     &__copyright {
         font-weight: 300;
-    }
+        margin-top: -4px;
 
-    &__logo {
-        display: block;
-        width: 64px;
-        height: 27px;
-        // margin-left: 40px;
+        @media screen and (max-width: 376px) {
+            color: #262626;
+        }
     }
 
     &__author {
         font-size: 15px;
         font-weight: 300;
+        margin-top: -4px;
     }
 
     &__author-link {
-        color: #ff2b58;
+        color: #ff2b59c7;
         font-weight: 700;
+
+        &:hover {
+            color: red;
+            text-decoration: underline;
+        }
     }
 }

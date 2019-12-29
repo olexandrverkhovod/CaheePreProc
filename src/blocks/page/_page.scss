@@ -3,12 +3,21 @@
     color: white;
 
     &--main {
-        background-image: url(../images/main-bg.png);
+        background-image: url(../images/main-bg@x1.png);
         background-repeat: no-repeat;
-        background-position: center;
         min-height: 100vh;
         color: black;
-        padding-bottom: 70px;
+        padding-bottom: 67px;
+
+        @media screen and (max-width: 1199px) {
+            background-position: center;
+            padding-bottom: 40px;
+        }
+
+        @media screen and (max-width: 575px) {
+            background-size: 180%;
+            background-position: center bottom;
+        }
 
         &:after {
             content: '';
@@ -24,54 +33,143 @@
     }
 
     &--about {
+        padding-top: 35px;
         background-color: #00b8b8;
-        padding-bottom: 20px;
+        padding-bottom: 19px;
+
+        @media screen and (max-width: 1199px) {
+            padding-top: 153px;
+            padding-bottom: 153px;
+        }
+
+        @media screen and (max-width: 991px) {
+            padding-top: 30px;
+            padding-bottom: 40px;
+        }
     }
 
     &--about-img {
-        margin-top: 35px;
-        margin-left: -13px;
+        width: 97%;
+        margin-left: -125px;
+
+        @media screen and (max-width: 1199px) {
+            margin-left: 0px;
+        }
+
+        @media screen and (max-width: 991px) {
+            width: 70%;
+            margin-bottom: 20px;
+        }
+
+        @media screen and (max-width: 575px) {
+            margin-bottom: 40px;
+        }
     }
 
     &--services {
         background-color: #70bfff;
         padding-top: 100px;
+        padding-bottom: 132px;
+
+        @media screen and (max-width: 1199px) {
+            padding-top: 40px;
+            padding-bottom: 40px;
+        }
+    }
+
+    &--services-img {
+        margin-left: 105px;
+        margin-top: -30px;
+
+        @media screen and (max-width: 1199px) {
+            width: 60%;
+            margin-left: 0px;
+            margin-top: 0px;
+        }
     }
 
     &--gallery {
         background-color: #ffe92f;
-        padding-top: 90px;
+        padding-top: 89px;
+        padding-bottom: 122px;
+
+        @media screen and (max-width: 1199px) {
+            padding: 40px 40px;
+        }
+
+        @media screen and (max-width: 575px) {
+            padding: 40px 0px;
+        }
     }
 
     &--subscribe {
         color: black;
         position: relative;
         padding-top: 140px;
+        padding-bottom: 164px;
+
+        @media screen and (max-width: 991px) {
+            padding-top: 90px;
+            padding-bottom: 84px;
+        }
     }
 
     &--subscribe-img {
         position: absolute;
         bottom: 0;
         right: 0;
-        height: 100%;
+        // height: 100%;
         z-index: -1;
+
+        @media screen and (max-width: 1199px) {
+            right: -120px;
+            width: 53%;
+            top: 20px;
+            right: 0;
+        }
+
+        @media screen and (max-width: 575px) {
+            display: none;
+        }
     }
 
     &--blog {
         background-color: #b07cf7;
-        padding-top: 102px;
+        padding-top: 89px;
+        padding-bottom: 121px;
+
+        @media screen and (max-width: 1199px) {
+            padding: 80px 40px 100px 40px
+        }
+
+        @media screen and (max-width: 991px) {
+            padding-top: 40px;
+            padding-bottom: 50px;
+        }
+
+        @media screen and (max-width: 575px) {
+            padding: 40px 0px 50px 0px
+        }
+
     }
 
     &--contact {
-        background-image: url(../images/form-bg.png);
+        padding-top: 88px;
+        padding-bottom: 48px;
+        background-image: url(../images/form-bg@x1.png);
         background-repeat: no-repeat;
         background-position: center;
         background-size: cover;
         color: black;
+
+        @media screen and (max-width: 1199px) {
+            padding-top: 60px;
+        }
     }
 
     &--footer {
-        height: 100px;
+        padding-top: 32px;
+        padding-bottom: 28px;
         background-color: #262626;
         color: #b9b9b9;
         display: flex;

@@ -4,8 +4,12 @@
     padding-top: 11px;
 
     & a {
-        text-decoration: none;
         color: black;
+
+        &:hover {
+            text-decoration: underline;
+            ;
+        }
     }
 
     &__title {
@@ -19,5 +23,9 @@
         font-size: 20px;
         font-weight: 300;
         margin-bottom: 18px;
+    }
+
+    @media screen and (max-width: 991px) {
+        margin-bottom: 40px;
     }
 }

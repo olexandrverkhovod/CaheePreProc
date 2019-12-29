@@ -1,9 +1,18 @@
 .blog {
-    padding-bottom: 50px;
+    margin-bottom: 50px;
+    overflow: hidden;
+
+    @media screen and (max-width: 991px) {
+        margin-bottom: 20px;
+    }
 
     .box-item {
         position: relative;
         box-shadow: 0 3px 5px rgba(0, 0, 0, 0.5);
+
+        @media screen and (max-width: 991px) {
+            margin-bottom: 30px;
+        }
 
         &:after {
             content: '';
@@ -13,7 +22,7 @@
             bottom: 0;
             right: 0;
             z-index: 2;
-            background-image: linear-gradient(to top, rgba(0, 0, 0, 1) 0%, rgba(255, 255, 255, 0) 50%);
+            background-image: linear-gradient(to top, rgba(0, 0, 0, 1) 0%, rgba(255, 255, 255, 0) 60%);
             pointer-events: none;
         }
 
@@ -22,6 +31,7 @@
         }
 
         &__img {
+            display: block;
             top: 0;
             left: 0;
             z-index: 1;
@@ -41,7 +51,6 @@
             background-color: #26262680;
             border-radius: 5px;
             padding: 1px 8px 5px 7px;
-            margin-bottom: 116px;
 
             & h2 {
                 font-size: 32px;

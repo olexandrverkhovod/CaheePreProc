@@ -1,10 +1,28 @@
 .buttons-group {
-    margin-top: 78px;
-    margin-bottom: 130px;
+    margin-top: 75px;
     display: flex;
     flex-basis: 25%;
     flex-direction: column;
     padding-top: 2px;
+    padding-left: 70px;
+    padding-right: 70px;
+
+    @media screen and (max-width: 1199px) {
+        padding-left: 200px;
+        padding-right: 100px;
+        margin-top: -100px;
+        position: relative;
+        z-index: 2;
+    }
+
+    @media screen and (max-width: 991px) {
+        padding: 0 150px;
+    }
+
+    @media screen and (max-width: 575px) {
+        padding: 0px;
+        margin-top: 20px;
+    }
 
     &__btn {
         display: flex;
@@ -18,10 +36,12 @@
         color: white;
         text-transform: uppercase;
         box-shadow: 0 2px 5px rgba(0, 0, 0, 0.5);
+        cursor: pointer;
 
         &:hover {
             box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
         }
+
     }
 
     &__text {
@@ -33,52 +53,25 @@
         font-size: 20px;
         font-weight: 700;
         text-transform: none;
-        padding: 36px 0;
-        border-right: 1px solid grey;
-
-        &--shopping {
-            padding-bottom: 38px;
-            padding-right: 6px;
-        }
-
-        &--products {
-            padding-bottom: 38px;
-            padding-right: 7px;
-        }
 
         &--delivery {
-            padding-top: 19px;
-            padding-bottom: 23px;
-            line-height: 28px;
-            padding-right: 7px;
-        }
+            @media screen and (max-width: 575px) {
+                margin-left: -20px;
+                margin-right: -20px;
+            }
 
-        &--organized {
-            padding-top: 36px;
-            padding-bottom: 38px;
-            padding-left: 1px;
+            @media screen and (max-width: 376px) {
+                font-size: 19px;
+            }
         }
     }
 
     &__img {
-        &--shopping {
-            padding-right: 20px;
-            padding-left: 26px;
-        }
-
-        &--products {
-            padding-right: 16px;
-            padding-left: 22px;
-        }
-
-        &--delivery {
-            padding-right: 17px;
-            padding-left: 22px;
-        }
-
-        &--organized {
-            padding-right: 17px;
-            padding-left: 21px;
-        }
+        display: flex;
+        height: 98px;
+        width: 100px;
+        justify-content: center;
+        align-content: center;
+        border-left: 1px solid grey;
     }
 }

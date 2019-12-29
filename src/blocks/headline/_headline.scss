@@ -2,41 +2,87 @@
 
     &--main {
         text-align: left;
-        padding-left: 35px;
-        padding-right: 35px;
+        margin-left: -4px;
+        padding-right: 70px;
+
+        @media screen and (max-width: 1199px) {
+            margin-left: 38px;
+        }
+
+        @media screen and (max-width: 575px) {
+            padding-right: 0px;
+            text-align: center;
+            margin-left: 0px;
+        }
     }
 
     &--about {
-        padding-top: 168px;
-        margin-left: 110px;
-        padding-right: 20px;
-
         & h1 {
+            margin-top: -22px;
+            margin-left: 8px;
             font-size: 90px;
             font-weight: 700;
-            margin-bottom: 16px;
+            margin-bottom: 13px;
             text-align: left;
+
+            @media screen and (max-width: 991px) {
+                text-align: center;
+            }
+
+            @media screen and (max-width: 575px) {
+                font-size: 60px;
+                margin-bottom: 20px;
+            }
         }
 
         & p {
+            margin-left: 5px;
             line-height: 28px;
-            margin-bottom: 30px;
             text-align: left;
+
+            @media screen and (max-width: 991px) {
+                text-align: center;
+                padding: 0 50px;
+            }
+
+            @media screen and (max-width: 575px) {
+                // font-size: 60px;
+            }
         }
     }
 
     &--services {
         position: relative;
-        padding-left: 105px;
 
         & h1 {
+            // white-space: nowrap - включать при >1200px и <992px
             white-space: nowrap;
             position: absolute;
-            top: 0px;
-            left: 0px;
+            top: -45px;
+            left: 28px;
             color: white;
             font-size: 90px;
             font-weight: 700;
+
+            @media screen and (max-width: 1199px) {
+                top: 300px;
+                left: -30px;
+            }
+
+            @media screen and (max-width: 991px) {
+                left: -50px;
+            }
+
+            @media screen and (max-width: 575px) {
+                font-size: 60px;
+                top: 120px;
+                left: -60px;
+            }
+
+            @media screen and (max-width: 376px) {
+                font-size: 55px;
+            }
+
         }
     }
 
@@ -45,31 +91,59 @@
             color: black;
             font-size: 90px;
             font-weight: 700;
-            margin-bottom: 30px;
+            margin-bottom: 29px;
         }
 
         & p {
             color: black;
             padding: 0 290px;
-            margin-bottom: 41px;
+            margin-bottom: 42px;
             line-height: 27px;
+
+            @media screen and (max-width: 1199px) {
+                padding: 0 200px;
+            }
+
+            @media screen and (max-width: 991px) {
+                padding: 0 50px;
+            }
         }
     }
 
     &--subscribe {
         & h1 {
+            margin-left: -2px;
             color: black;
             font-size: 40px;
             font-weight: 700;
-            margin-bottom: 21px;
+            margin-bottom: 20px;
             text-align: left;
+
+            @media screen and (max-width: 1199px) {
+                margin-left: 38px;
+            }
+
+            @media screen and (max-width: 575px) {
+                margin-left: 0px;
+                text-align: center;
+            }
         }
 
         & p {
+            margin-left: -6px;
             color: black;
             margin-bottom: 27px;
             line-height: 27px;
             text-align: left;
+
+            @media screen and (max-width: 1199px) {
+                margin-left: 38px;
+            }
+
+            @media screen and (max-width: 575px) {
+                margin-left: 0px;
+                text-align: center;
+            }
         }
     }
 
@@ -84,11 +158,19 @@
             padding: 0 300px;
             margin-bottom: 44px;
             line-height: 25px;
+
+            @media screen and (max-width: 1199px) {
+                padding: 0 200px;
+            }
+
+            @media screen and (max-width: 991px) {
+                padding: 0 50px;
+                margin-bottom: 60px;
+            }
         }
     }
 
     &--contact {
-        padding-top: 88px;
 
         & h1 {
             font-size: 90px;
@@ -99,7 +181,21 @@
         & p {
             line-height: 25px;
             margin-bottom: 30px;
-            padding: 0 360px;
+            padding: 0 400px;
+
+            @media screen and (max-width: 1199px) {
+                padding: 0 280px;
+            }
+
+            @media screen and (max-width: 991px) {
+                padding: 0 120px;
+                margin-bottom: 60px;
+            }
+
+            @media screen and (max-width: 575px) {
+                padding: 0 50px;
+                margin-bottom: 60px;
+            }
         }
     }
 

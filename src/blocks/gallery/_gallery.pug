@@ -2,14 +2,14 @@ mixin gallery
     .gallery
         .gallery__list.gallery__list--firstline
             .row
-                .col-8
-                    img(src="images/gallery1.png" alt="").gallery__img
-                .col-4.d-flex.flex-column.justify-content-between
-                    img(src="images/gallery2.png" alt="").gallery__img
-                    img(src="images/gallery3.png" alt="").gallery__img
+                .col-xl-8.col-lg-8.col-md-12.d-flex.justify-content-md-center
+                    img(src="./images/gallery1@x1.png" srcset="./images/gallery1@x2.png 2x, ./images/gallery1@x3.png 3x" alt="").gallery__img
+                .col-xl-4.col-lg-4.d-md-flex.flex-md-column.justify-content-md-between
+                    img(src="./images/gallery2@x1.png" srcset="./images/gallery2@x2.png 2x, ./images/gallery2@x3.png 3x" alt="").gallery__img
+                    img(src="./images/gallery3@x1.png" srcset="./images/gallery3@x2.png 2x, ./images/gallery3@x3.png 3x" alt="").gallery__img
         .gallery__list.gallery__list--secondline
             .row
-                .col-6
-                    img(src="images/gallery4.png" alt="").gallery__img
-                .col-6
-                    img(src="images/gallery5.png" alt="").gallery__img
+                .col-xl-6.col-lg-6.d-md-flex.flex-md-column.justify-content-md-center
+                    img(src="./images/gallery4@x1.png" srcset="./images/gallery4@x2.png 2x, ./images/gallery4@x3.png 3x" alt="").gallery__img
+                .col-xl-6.col-lg-6.d-md-flex.flex-md-column.justify-content-md-center
+                    img(src="./images/gallery5@x1.png" srcset="./images/gallery5@x2.png 2x, ./images/gallery5@x3.png 3x" alt="").gallery__img

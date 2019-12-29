@@ -17,36 +17,36 @@ html(lang="en")
         meta(name="viewport", content="width=device-width, initial-scale=1.0")
         meta(http-equiv="X-UA-Compatible", content="ie=edge")
         title Cahee
+        meta(name="description" content="Адаптивный макет Cahee")
         link(rel="stylesheet", href="css/style.css")
     body
-        .page.page--main
+        .page.page--main.lazy(data-src="./images/main-bg@x1.png" data-srcset="./images/main-bg@x2.png 2x, ./images/main-bg@x3.png 3x")
             .container.container--lg
                 .row
                     .col-12
                         +nav
                 .row
-                    .col-5
+                    .col-xl-5.col-lg-5.col-md-7.col-12
                         +headline("Fresh Life", "Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco").headline--main
                         +button-area("get free now").button-area--main
-                    .col-7
                 .row
                     .col-12
                         +scroll
         .page.page--about
             .container.container--lg
                 .row
-                    .col-6
-                        img(src="images/about-img.png" alt="cup with raspberries").page--about-img
-                    .col-6
-                        +headline("About Us", "Abore Cahee magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum. Nim id est laborum. Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore.").headline--about
+                    .col-xl-7.col-lg-6.col-md-12.col-sm-12.col-12
+                        img(src="./images/about-img@x1.png" srcset="./images/about-img@x2.png 2x, ./images/about-img@x3.png 3x" alt="cup with raspberries").page--about-img.lazy
+                    .col-xl-5.col-lg-6.col-md-12.col-sm-12.col-12.d-flex.align-items-center
+                        +headline("About Us", "Abore Cahee magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum.<br> Nim id est laborum. Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore.").headline--about
         .page.page--services
             .container.container--lg
                 .row
-                    .col-12.col-xl-4.col-lg-5.offset-lg-1.order-lg-1.order-2
+                    .col-12.col-lg-10.offset-lg-2.col-xl-6.offset-xl-0.order-xl-1.order-2
                         +buttons-group
-                    .col-12.col-lg-6.offset-xl-1.order-1.order-lg-2.d-flex.align-items-center.justify-content-center.justify-content-lg-end
+                    .col-12.offset-lg-2.col-lg-10.col-xl-6.offset-xl-0.order-1.order-xl-2.d-flex.justify-content-center.justify-content-xl-center.justify-content-lg-start.align-items-xl-center
                         +headline("Our Services", "").headline--services
-                        img(src="images/tomato.png" alt="tomato").page--services-img
+                        img(src="./images/tomato@x1.png" srcset="./images/tomato@x2.png 2x, ./images/tomato@x3.png 3x" alt="tomato").page--services-img.lazy
         .page.page--gallery
             .container.container--lg
                 .row
@@ -57,12 +57,12 @@ html(lang="en")
         .page.page--subscribe
             .container.container--lg
                 .row
-                    .col-6
+                    .col-xl-6.col-lg-6.col-md-6.col-12
                         +headline("Subscribe To Us","Dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.").headline--subscribe
                 .row
-                    .col-8
+                    .col-xl-8.col-lg-8.col-md-10
                         +form-subscribe
-            img(src="images/subscribe-img.png" alt="").page--subscribe-img
+            img(src="./images/subscribe-img@x1.png" srcset="./images/subscribe-img@x2.png 2x, ./images/subscribe-img@x3.png 3x" alt="").page--subscribe-img.lazy
         .page.page--blog
             .container.container--lg
                 .row
@@ -72,15 +72,15 @@ html(lang="en")
                 .row
                     .col-12
                         +button-area("view more").button-area--blog
-        .page.page--contact
+        .page.page--contact.lazy(data-src="./images/form-bg@x1.png" data-srcset="./images/form-bg@x2.png 2x, ./images/form-bg@x3.png 3x")
             .container.container--lg
                 .row
                     .col-12
                         +headline("Contact","For new projects, ideas, business or anything you'd like to discuss, contact with me!").headline--contact
                 .row
-                    .col-5
+                    .col-xl-5.offset-xl-0.col-lg-5.offset-lg-1.col-md-10.offset-md-1.order-xl-1.order-lg-1.order-2
                         +form-contact
-                    .col-5.offset-2
+                    .col-xl-5.offset-xl-2.col-lg-5.offset-lg-1.col-md-10.offset-md-1.order-1.order-lg-1.order-xl-2
                         +desc-contact
         .page.page--footer 
             .container.container--lg
@@ -89,4 +89,9 @@ html(lang="en")
                         +footer
         script(src="https://kit.fontawesome.com/27e0e7ab02.js" crossorigin="anonymous")
         script(src="https://code.jquery.com/jquery-3.4.0.min.js")
+        script(src="./js/jquery.lazy.min.js")
+        script(src="./js/jquery.lazy.plugins.min.js")
+        script.
+            $('.lazy').lazy();
 
+        

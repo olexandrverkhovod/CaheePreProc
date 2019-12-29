@@ -1,5 +1,11 @@
 .footer-logo {
     &__link {
         text-decoration: none;
+        margin-right: 65px;
+
+        @media screen and (max-width: 575px) {
+            margin-right: 36px;
+        }
+
     }
 }

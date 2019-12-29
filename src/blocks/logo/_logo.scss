@@ -1,5 +1,9 @@
 .logo {
-    margin-left: 38px;
+    margin-left: 0px;
+
+    @media screen and (max-width: 1199px) {
+        margin-left: 38px;
+    }
 
     &__link {
         text-decoration: none;

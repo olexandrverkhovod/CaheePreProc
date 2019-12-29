@@ -3,7 +3,6 @@
 
     &__wrapper {
         padding-bottom: 15px;
-        padding-left: 38px;
     }
 
     &__input {
@@ -34,6 +33,7 @@
             height: 250px;
             resize: none;
             padding-top: 16px;
+            overflow: hidden;
         }
     }
 
