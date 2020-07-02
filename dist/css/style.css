@@ -3812,7 +3812,6 @@ a {
     font-size: 20px;
     font-weight: 300;
     color: white;
-    text-transform: uppercase;
     -webkit-box-shadow: 0 2px 5px rgba(0, 0, 0, 0.5);
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.5);
     cursor: pointer; }
@@ -3832,8 +3831,7 @@ a {
     justify-content: center;
     color: #262626;
     font-size: 20px;
-    font-weight: 700;
-    text-transform: none; }
+    font-weight: 700; }
     @media screen and (max-width: 575px) {
       .buttons-group__text--delivery {
         margin-left: -20px;
@@ -3845,7 +3843,7 @@ a {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    height: 98px;
+    min-height: 98px;
     width: 100px;
     -webkit-box-pack: center;
     -ms-flex-pack: center;
@@ -3867,6 +3865,7 @@ a {
       margin-bottom: 17px; } }
 
 .gallery__img {
+  height: auto !important;
   max-width: 100%;
   display: block;
   -webkit-box-shadow: 0 2px 5px rgba(0, 0, 0, 0.5);
@@ -3983,7 +3982,7 @@ a {
       position: absolute;
       top: 30px;
       left: 30px;
-      z-index: 10;
+      z-index: 20 !important;
       pointer-events: none; }
     .blog .box-item__date-block {
       display: inline-block;
@@ -4022,6 +4021,7 @@ a {
   .form-contact__wrapper {
     padding-bottom: 15px; }
   .form-contact__input {
+    font-family: 'Raleway', sans-serif;
     color: white;
     width: 100%;
     border: 0;
@@ -4053,6 +4053,11 @@ a {
       font-size: 15px;
       font-weight: 300; }
     .form-contact__input::placeholder {
+      color: white;
+      font-family: 'Raleway', sans-serif;
+      font-size: 15px;
+      font-weight: 300; }
+    .form-contact__input:-ms-input-placeholder {
       color: white;
       font-family: 'Raleway', sans-serif;
       font-size: 15px;
@@ -4105,9 +4110,12 @@ a {
     font-weight: 300;
     margin-top: -4px; }
   .footer__author-link {
-    color: #ff2b59c7;
+    color: #ff2b59;
     font-weight: 700; }
     .footer__author-link:hover {
+      color: red;
+      text-decoration: underline; }
+    .footer__author-link:active {
       color: red;
       text-decoration: underline; }
 

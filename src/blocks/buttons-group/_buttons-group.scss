@@ -34,7 +34,6 @@
         font-size: 20px;
         font-weight: 300;
         color: white;
-        text-transform: uppercase;
         box-shadow: 0 2px 5px rgba(0, 0, 0, 0.5);
         cursor: pointer;
 
@@ -52,7 +51,6 @@
         color: #262626;
         font-size: 20px;
         font-weight: 700;
-        text-transform: none;
 
         &--delivery {
             @media screen and (max-width: 575px) {
@@ -68,7 +66,7 @@
 
     &__img {
         display: flex;
-        height: 98px;
+        min-height: 98px;
         width: 100px;
         justify-content: center;
         align-content: center;

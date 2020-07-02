@@ -19,12 +19,19 @@
     }
 
     &__author-link {
-        color: #ff2b59c7;
+        color: #ff2b59;
         font-weight: 700;
 
         &:hover {
             color: red;
             text-decoration: underline;
         }
+
+        &:active {
+            color: red;
+            text-decoration: underline;
+        }
     }
+
+
 }
